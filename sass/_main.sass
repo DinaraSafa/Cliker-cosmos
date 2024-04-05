@@ -1,0 +1,97 @@
+#main
+    background-image: url(../img/zvezdolet.jpg)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    width: 100%
+    min-height: 100vh
+    filter: brightness(100%)
+    animation: $animation-name $animation-duration $animation-timing-function $animation-iteration-count
+
+.section-wrapper
+    display: flex
+    flex-flow: column nowrap
+
+.score-counter
+    padding: 2.5rem 4rem
+    display: flex
+    flex-flow: column nowrap
+    width: 50%
+    margin-left: 15rem
+    @include respond(phone)
+        padding: 1.5rem 2rem
+        width: 100%
+        margin-left: 0
+    @include respond(laptop)
+        font-size: 2rem
+    @include respond(big-screen)
+        font-size: 3rem
+
+// h1
+//     margin-right: 2.5rem
+//     flex-grow: 1
+
+.power-button
+    display: flex
+    flex-flow: row nowrap
+    @include respond(phone)
+        flex-direction: column
+    @include respond(tab-port)
+        flex-direction: column
+        align-items: center
+    @include respond(tab-land)
+        flex-direction: column
+        align-items: center
+
+.first
+    padding: 2.5rem
+    flex-grow: 10
+    @include respond(phone)
+        padding: 1.5rem
+
+.second-two
+    display: flex
+    align-items: center
+    flex-flow: row wrap
+    justify-content: center
+    position: sticky
+    top: 10rem
+
+.second
+    // width: 100%
+    position: absolute
+    left: 100rem
+    top: 5rem
+    @include respond(phone)
+        position: none
+        position: static
+        left: auto
+        top: auto
+        margin-top: 1rem
+    @include respond(tab-port)
+        position: none
+        position: static
+        left: auto
+        top: auto
+        margin-top: 1rem
+    @include respond(tab-land)
+        position: none
+        position: static
+        left: auto
+        top: auto
+        margin-top: 1rem
+    @include respond(laptop)
+        left: 83rem
+    @include respond(big-screen)
+        left: 100rem
+        top: 10rem
+
+.section-three
+    display: flex
+    flex-direction: column
+    width: 82rem
+    @include respond(laptop)
+        width: 53rem
+    @include respond(big-screen)
+        width: 82rem

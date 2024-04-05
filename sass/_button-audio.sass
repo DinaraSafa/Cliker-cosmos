@@ -1,0 +1,44 @@
+.buttonmusic
+    width: 10%
+    height: 10%
+
+.button-64
+    align-items: center
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB)
+    border: 0
+    border-radius: .8rem
+    box-shadow: rgba(151, 65, 252, 0.2) 0 1.5rem 3rem -.5rem
+    box-sizing: border-box
+    color: #FFFFFF
+    display: flex
+    font-family: Phantomsans, sans-serif
+    font-size: 2rem
+    justify-content: center
+    line-height: 1em
+    max-width: 100%
+    min-width: 14rem
+    padding: .3rem
+    text-decoration: none
+    user-select: none
+    -webkit-user-select: none
+    touch-action: manipulation
+    white-space: nowrap
+    margin-bottom: 3rem
+    @include respond(phone)
+        font-size: 1.5rem
+        padding: .2rem
+
+.button-64:active,
+.button-64:hover
+    outline: 0
+
+.button-64 span
+    background-color: rgb(5, 6, 45)
+    padding: 1.6rem 2.4rem
+    border-radius: .6rem
+    width: 100%
+    height: 100%
+    transition: 300ms
+
+.button-64:hover span
+    background: none

@@ -1,0 +1,40 @@
+#button
+    height: 40rem
+    width: 100rem
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    &:focus
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5)
+    @include respond(phone)
+        height: 20rem
+        width: 50rem
+    @include respond(laptop)
+        width: 85rem
+        height: 32rem
+    @include respond(big-screen)
+        height: 40rem
+        width: 100rem
+
+.button-pic
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+#button.image
+    transition: all .05s
+
+    // &-new
+    //     background-image: url('../img/happybirthday-dj.gif')
+    // &-additional
+    //     background-image: url('../img/kiss-happy-birthday.gif')
+    &-final
+        background-image: url("../img/cat-pat2.png")
+    &-start
+        background-image: url("../img/cat-pat.png")
+
+    // &-utyth
+    //     background-image: url('../img/kiss-happy-birthday.gif')

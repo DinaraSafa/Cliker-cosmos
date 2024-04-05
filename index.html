@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра в Кликер</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="icons/game-controller.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="content">
+        <div class="section-wrapper">
+          <div class="score-counter">
+            <audio
+              id="backgroundMusic"
+              src="audio/Chipi-Chipi.mp3"
+              loop
+              autoplay
+            ></audio>
+            <div class="buttonmusic">
+              <button class="button-64" onclick="toggleMusic()" role="button">
+                <span class="text">ЗВУК</span>
+              </button>
+            </div>
+            <h1>Очков: <span id="counter">0</span></h1>
+            <h1>В секунду: <span id="background">0</span></h1>
+            <h1>Множитель клика: <span id="factor">1</span></h1>
+          </div>
+        </div>
+
+        <div class="power-button">
+          <div class="first">
+            <div class="section-two">
+              <div id="button" class="image image-start">
+                <div onclick="playAudio()" class="button-pic"></div>
+              </div>
+            </div>
+          </div>
+          <div onclick="clickBonusAudio()" class="second">
+            <div class="section-three"></div>
+          </div>
+        </div>
+        <audio id="myAudio" src="audio/plop.wav"></audio>
+        <audio id="myAudi" src="audio/pulse-pixel.wav"></audio>
+      </div>
+    </div>
+    <script async src="js/script.js"></script>
+  </body>
+</html>

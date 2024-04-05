@@ -1,0 +1,25 @@
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@font-face
+    font-family: 'Stange'
+    src: url("../fonts/stange-stange-400.ttf")
+
+html
+    font-size: 62.5%
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 50%
+    @include respond(phone)
+        font-size: 30%
+    // @include respond(big-screen)
+    //     font-size: 75% 
+body
+    color: #ffffff
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, 1)
+    font-size: 2.5rem
+    font-family: 'Stange', sans-serif
+    cursor: url('../icons/free-icon.png'), auto
